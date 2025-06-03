@@ -6,18 +6,16 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --title-color: hsl(220, 8%, 10%);
-  --text-color: hsl(220, 8%, 40%);
-  --white-color: hsl(0, 0%, 100%);
-  --black-color: hsl(220, 8%, 6%);
-  --body-color: hsl(220, 8%, 99%);
-  --container-color: hsl(220, 8%, 96%);
-  --opacity-color-30: hsla(0, 0%, 90%, .3);
-  --opacity-color-20: hsla(0, 0%, 90%, .2);
+  --title-color: #17191c;
+  --text-color: #5e636e;
+  --white-color: #ffffff;
+  --black-color: #0e0f11;
+  --body-color: #fcfcfd;
+  --container-color: #f4f5f6;
+  --opacity-color-30: rgba(230, 230, 230, 0.3);
+  --opacity-color-20: rgba(230, 230, 230, 0.2);
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --second-font: "Dancing Script", cursive;
   --biggest-font-size: 3rem;
@@ -25,8 +23,8 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -48,7 +46,7 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
+    --small-font-size: 0.875rem;
   }
 }
 
@@ -73,7 +71,7 @@ body {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: background-color .4s;
+  transition: background-color 0.4s;
 }
 
 input,
@@ -82,7 +80,10 @@ button {
   border: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: var(--font-semi-bold);
 }
 
@@ -103,12 +104,10 @@ img {
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 
-
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
-
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -137,63 +136,43 @@ img {
 
 /*=============== HEADER & NAV ===============*/
 
-
 /* Navigation for mobile devices */
-
 
 /* Show menu */
 
-
 /* Change background header */
-
 
 /* Active link */
 
-
 /*=============== HOME ===============*/
 
-
 /* Swiper class */
-
 
 /*=============== BUTTON ===============*/
 
-
 /*=============== DESTINATION ===============*/
-
 
 /*=============== TESTIMONIAL ===============*/
 
-
 /* Swiper class */
-
 
 /*=============== GALLERY ===============*/
 
-
 /*=============== JOIN ===============*/
-
 
 /*=============== FOOTER ===============*/
 
-
 /*=============== SCROLL BAR ===============*/
-
 
 /*=============== SCROLL UP ===============*/
 
-
 /* Show Scroll Up */
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-
 /* For medium devices */
 
-
 /* For large devices */
-
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
