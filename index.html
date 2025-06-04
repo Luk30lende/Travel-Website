@@ -18,10 +18,13 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Travel Website</title>
   </head>
@@ -42,11 +45,11 @@
             <li><a href="#gallery" class="nav_link">Gallery</a></li>
             <li><a href="#join" class="nav_link">Contact</a></li>
           </ul>
-        </div>
 
-        <!-- Close button -->
-        <div class="nav_close" id="nav-close">
-          <i class="ri-close-large-fill"></i>
+          <!-- Close button -->
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-large-fill"></i>
+          </div>
         </div>
 
         <div class="nav_buttons">
@@ -64,7 +67,55 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <img src="imgs/home-bg.png" alt="image" class="home_bg" />
+        <div class="home_blur"></div>
+
+        <div class="home_container container grid">
+          <div class="home_data">
+            <h1 class="home_title">
+              Travel <br />
+              Around <br />
+              The World
+            </h1>
+
+            <p class="home_description">
+              Explore the best beautiful tourist spots in the countries and see
+              the world on all your amazing adventures.
+            </p>
+
+            <a href="#" class="button button_opa-30">
+              Explore The World
+              <i class="ri-arrow-right-long-line"></i>
+            </a>
+          </div>
+
+          <div class="home_swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="home_article swiper-slide">
+                <img src="imgs/home-img-1.png" alt="image" class="home_img" />
+              </article>
+              <article class="home_article swiper-slide">
+                <img src="imgs/home-img-2.png" alt="image" class="home_img" />
+              </article>
+              <article class="home_article swiper-slide">
+                <img src="imgs/home-img-3.png" alt="image" class="home_img" />
+              </article>
+              <article class="home_article swiper-slide">
+                <img src="imgs/home-img-4.png" alt="image" class="home_img" />
+              </article>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-long-fill"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-long-fill"></i>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== DESTINATION ====================-->
       <section class="destination section" id="destination"></section>
@@ -88,7 +139,7 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="/main.js"></script>
