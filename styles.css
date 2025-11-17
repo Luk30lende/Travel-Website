@@ -544,6 +544,47 @@ img {
 }
 
 /*=============== JOIN ===============*/
+.join_container {
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.join_data {
+  text-align: center;
+}
+
+.join_data .section_title {
+  margin-bottom: 1rem;
+}
+
+.join_description {
+  margin-bottom: 2rem;
+}
+
+.join_form {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.join_input {
+  width: 100%;
+  background-color: var(--container-color);
+  color: var(--text-color);
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.4s;
+}
+
+.join_button {
+  padding-block: 1.25rem;
+  cursor: pointer;
+}
+
+.join_img {
+  width: 300px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
 
 /*=============== FOOTER ===============*/
 
