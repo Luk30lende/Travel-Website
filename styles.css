@@ -495,6 +495,53 @@ img {
 }
 
 /*=============== GALLERY ===============*/
+.gallery_container {
+  grid-template-columns: 300px;
+  justify-content: center;
+}
+
+.gallery_card {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.gallery_shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 70%,
+    hsla(0, 0%, 0%, 0.7) 100%
+  );
+}
+
+.gallery_img {
+  transition: transform 0.4s;
+}
+
+.gallery_data {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1px;
+  color: var(--white-color);
+}
+
+.gallery_subtitle {
+  font-size: var(--h1-font-size);
+  font-family: var(--second-font);
+}
+
+.gallery_title {
+  font-size: var(--h2-font-size);
+}
+
+.gallery_card:hover .gallery_img {
+  transform: scale(1.2);
+}
 
 /*=============== JOIN ===============*/
 

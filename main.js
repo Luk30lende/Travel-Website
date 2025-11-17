@@ -64,10 +64,10 @@ const swiperTestimonial = new Swiper(".testimonial_swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
 });
 
 /*=============== SHOW SCROLL UP ===============*/
