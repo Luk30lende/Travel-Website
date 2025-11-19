@@ -103,11 +103,38 @@ img {
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
+.dark-theme {
+  --title-color: #e3e5e8;
+  --text-color: #acb0b9;
+  --body-color: #131416;
+  --container-color: #1c1e21;
+  --opacity-color-30: rgba(38, 38, 38, 0.3);
+  --opacity-color-20: rgba(38, 38, 38, 0.2);
+}
 
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
+.dark-theme .bg-header .nav_logo img {
+  filter: initial;
+}
+
+.dark-theme .bg-header {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.dark-theme .scrollup {
+  background-color: var(--container-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: #242529;
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: #60626c;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -251,6 +278,9 @@ img {
 }
 
 /* Active link */
+.active-link::after {
+  width: 60%;
+}
 
 /*=============== HOME ===============*/
 .home {
@@ -664,8 +694,29 @@ img {
 }
 
 /*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--body-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  color: var(--title-color);
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  z-index: var(--z-tooltip);
+  transition: bottom 0.4s, transform 0.4s, background-color 0.4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.5rem);
+}
 
 /* Show Scroll Up */
+.show-scroll {
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
